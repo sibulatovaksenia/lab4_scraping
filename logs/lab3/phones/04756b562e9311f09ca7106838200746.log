@@ -1,0 +1,647 @@
+2025-05-11 21:09:04 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: lab3)
+2025-05-11 21:09:04 [scrapy.utils.log] INFO: Versions: lxml 5.3.1.0, libxml2 2.11.7, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.2, Platform Windows-11-10.0.26100-SP0
+2025-05-11 21:09:04 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-05-11 21:09:04 [py.warnings] WARNING: C:\Users\Ксеня\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\utils\request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+It will be removed in a future version of Scrapy.
+  return cls(crawler)
+
+2025-05-11 21:09:04 [asyncio] DEBUG: Using selector: SelectSelector
+2025-05-11 21:09:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-05-11 21:09:04 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-05-11 21:09:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-05-11 21:09:04 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-05-11 21:09:04 [scrapy.extensions.telnet] INFO: Telnet Password: 22d457f681781923
+2025-05-11 21:09:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-05-11 21:09:04 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'lab3',
+ 'DOWNLOAD_DELAY': 1,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'C:\\Users\\Ксеня\\lab4\\logs\\lab3\\phones\\04756b562e9311f09ca7106838200746.log',
+ 'NEWSPIDER_MODULE': 'lab3.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['lab3.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'}
+2025-05-11 21:09:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-05-11 21:09:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-05-11 21:09:05 [scrapy.middleware] WARNING: Disabled scrapy.pipelines.images.ImagesPipeline: ImagesPipeline requires installing Pillow 4.0.0 or later
+2025-05-11 21:09:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.files.FilesPipeline',
+ 'lab3.pipelines.DataCleaningPipeline',
+ 'lab3.pipelines.SaveToDatabasePipeline']
+2025-05-11 21:09:05 [scrapy.core.engine] INFO: Spider opened
+2025-05-11 21:09:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-05-11 21:09:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-05-11 21:09:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://allo.ua/ua/products/mobile/> from <GET https://allo.ua/ua/products/mobile/p-1/>
+2025-05-11 21:09:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://allo.ua/ua/products/mobile/p-2/> (referer: None)
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/4/34345345.webp'],
+ 'name': 'POCO F7 Ultra 16/512GB Black',
+ 'price': '36999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-f7-ultra-16-512gb-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/1/1111_28.jpg'],
+ 'name': 'Xiaomi Redmi Note 13 Pro 8/256 Midnight Black',
+ 'price': '8999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-13-pro-8-256-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/3/2343456567.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro 8/256GB Aurora Purple',
+ 'price': '10999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-8-256gb-aurora-purple.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/0/2004606066_4.webp'],
+ 'name': 'Apple iPhone 13 128GB Starlight (MLPG3)',
+ 'price': '22999',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-13-128gb-starlight.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/_/o/_o7-black-front-r1-wallpaper_result_1.webp'],
+ 'name': 'Xiaomi Redmi Note 14 6/128GB Midnight Black',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-6-128gb-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/124124124_6.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro 5G 8/256GB Midnight Black',
+ 'price': '13999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-midnight-black-1.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/452805291.webp'],
+ 'name': 'Moto Razr 50 ultra 12/512 Spring Greenz(PB1T0093RS)',
+ 'price': '33999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-razr-50-ultra-12-512-spring-greenz-pb1t0093rs.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_black_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 256GB Black Titanium (MYWV3)',
+ 'price': '62799',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-256gb-black-titanium.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_natural_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 256GB Natural Titanium (MYWY3)',
+ 'price': '62799',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-256gb-natural-titanium.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/456456456_3_1.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro+ 5G 8/256GB Midnight Black',
+ 'price': '15999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/2/621126126.webp'],
+ 'name': 'Xiaomi 14T 12/512GB Titan Black',
+ 'price': '23999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-512gb-titan-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/_/1_69_30.webp'],
+ 'name': 'Xiaomi Redmi Note 14 8/256GB Mist Purple',
+ 'price': '7499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-8-256gb-mist-purple.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/8/7/87989.webp'],
+ 'name': 'Xiaomi 14T 12/512GB Titan Gray',
+ 'price': '23999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-512gb-titan-gray.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_desert_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro 256GB Desert Titanium (MYNK3)',
+ 'price': '56699',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-256gb-desert-titanium.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s721_galaxys24fe_blue_front_result_1.webp'],
+ 'name': 'Samsung Galaxy S24FE 8/256 BLUE(SM-S721BLBGEUC)',
+ 'price': '26099',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s24fe-8-256-blue-sm-s721blbgeuc.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/_/o/_o7-blue-front-r1-wallpaper_result.webp'],
+ 'name': 'Xiaomi Redmi Note 14 8/256GB Ocean Blue',
+ 'price': '7499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-8-256gb-ocean-blue.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/4/345_6.webp'],
+ 'name': 'Xiaomi Redmi 14C 4/128GB Midnight Black',
+ 'price': '3999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-4-128gb-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/5/7/5765675671717150735.webp'],
+ 'name': 'Xiaomi Redmi 13 6/128GB Midnight Black',
+ 'price': '5499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-13-6-128gb-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/5/156314-1600-auto_result.webp'],
+ 'name': 'Moto Razr 50 8/256 Beach Sand (PB200051RS)',
+ 'price': '23999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-razr-50-8-256-beach-sand-pb200051rs.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a165f_galaxy-a16_lte_black_front-large_result_1.webp'],
+ 'name': 'Samsung Galaxy A16 4/128 BLACK (SM-A165FZKBEUC)',
+ 'price': '6599',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a16-4-128-black-sm-a165fzkbeuc.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/126126.webp'],
+ 'name': 'Xiaomi 14T 12/512GB Titan Blue',
+ 'price': '23999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-512gb-titan-blue.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_natural_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro 256GB Natural Titanium (MYNL3)',
+ 'price': '56699',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-256gb-natural-titanium.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/8/7/87989_2.webp'],
+ 'name': 'Xiaomi 14T 12/256GB Titan Gray',
+ 'price': '21999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-256gb-titan-gray.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/6/2632632632361725521389_1.webp'],
+ 'name': 'Xiaomi 14T Pro 12/512GB Titan Black',
+ 'price': '29999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-pro-12-512gb-titan-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/6/2661545.webp'],
+ 'name': 'Moto Edge 50 Pro 12/512 Black Beauty (PB1J0050RS)',
+ 'price': '21999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-pro-12-512-black-beauty-pb1j0050rs.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/4/345.webp'],
+ 'name': 'Xiaomi Redmi 14C 8/256GB Midnight Black',
+ 'price': '5299',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-8-256gb-midnight-black.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a165f_galaxy-a16_lte_gray_front-large_result.webp'],
+ 'name': 'Samsung Galaxy A16 8/256 GRAY (SM-A165FZACEUC)',
+ 'price': '7599',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a16-8-256-gray-sm-a165fzaceuc.html'}
+2025-05-11 21:09:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-2/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/_/1_69_30_2.webp'],
+ 'name': 'Термінал Xiaomi Redmi Note 14 6/128 Mist Purple',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-6-128gb-mist-purple.html'}
+2025-05-11 21:09:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://allo.ua/ua/products/mobile/p-3/> (referer: None)
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/f/i/file_131725523248.webp'],
+ 'name': 'Moto Edge 50 NEO 8/256 Grisaille (PB310041RS)',
+ 'price': '12999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-neo-8-256-grisaille-pb310041rs.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/126126126126_1_1.webp'],
+ 'name': 'POCO X7 Pro 8/256GB Black',
+ 'price': '15999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-x7-pro-8-256gb-black.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/126126_2.webp'],
+ 'name': 'Xiaomi 14T 12/256GB Titan Blue',
+ 'price': '21999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-256gb-titan-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_white_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro 256GB White Titanium (MYNJ3)',
+ 'price': '56699',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-256gb-white-titanium.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/0/2024_wrangler_basicpack_peach_fuzz_pdp_hero.webp'],
+ 'name': 'Moto Edge 50 12/512 Peach Fuzz (PB2U0011RS)',
+ 'price': '18999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-12-512-peach-fuzz-pb2u0011rs.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/5/7/576567567.webp'],
+ 'name': 'Xiaomi Redmi 13 8/256GB Midnight Black',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-13-8-256gb-midnight-black.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/12216126126.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro 5G 8/256GB Lavender Purple',
+ 'price': '13999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-lavender-purple-1.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/123123123_18.webp'],
+ 'name': 'Moto G75 8/256 GB Charcoal Grey (PB3Y0009RS)',
+ 'price': '9999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g75-8-256-gb-charcoal-grey-pb3y0009rs.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125_2_9.webp'],
+ 'name': 'Moto G15 Power 8/256GB Gravity Grey (PB6G0006UA)',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g15-power-8-256gb-gravity-grey-pb6g0006ua.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_black_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro 128GB Black Titanium (MYND3)',
+ 'price': '51499',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-128gb-black-titanium.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/456456645465_3.jpg'],
+ 'name': 'Moto G84 8/256 GB Midnight Blue (PAYM0045RS)',
+ 'price': '6999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g84-8-256-gb-midnight-blue-paym0045rs.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125125_7.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro+ 5G 12/512GB Lavender Purple',
+ 'price': '18999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-12-512gb-lavender-purple.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/4/645465_2.webp'],
+ 'name': 'Xiaomi Redmi 14C 4/128GB Starry Blue',
+ 'price': '3999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-4-128gb-starry-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s938_galaxys25ultra_front_titaniumgray_241107_result_1.webp'],
+ 'name': 'Samsung Galaxy S25 Ultra 12/512GB Titanium Grey (SM-S938BZTGEUC)',
+ 'price': '61199',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s25-ultra-12-512gb-titanium-grey-sm-s938bztgeuc.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s721_galaxys24fe_mint_front_result_2.webp'],
+ 'name': 'Samsung Galaxy S24FE 8/256 MINT(SM-S721BLGGEUC)',
+ 'price': '26099',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s24fe-8-256-mint-sm-s721blggeuc.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_15_plus_black_pdp_image_position-1__ww-en_1.jpg'],
+ 'name': 'Apple iPhone 15 256GB Black (MTP63)',
+ 'price': '39199',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-15-256gb-black.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125125_7_2.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro+ 5G 8/256GB Lavender Purple',
+ 'price': '15999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-lavender-purple.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_white_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 256GB White Titanium (MYWW3)',
+ 'price': '62799',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-256gb-white-titanium.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/456564456456_2.webp'],
+ 'name': 'Xiaomi 14T Pro 12/512GB Titan Gray',
+ 'price': '29999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-pro-12-512gb-titan-gray.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_15_plus_blue_pdp_image_position-1__ww-en_1.jpg'],
+ 'name': 'Apple iPhone 15 256GB Blue (MTP93)',
+ 'price': '39199',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-15-256gb-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/5/7/576675675567567_1_3.jpg'],
+ 'name': 'Moto G54 Power 8/256GB Midnight Blue (PB0W0018UA)',
+ 'price': '6999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g54-power-8-256gb-midnight-blue-pb0w0018ua.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/_/o/_o7-blue-front-r1-wallpaper_result_2.webp'],
+ 'name': 'Xiaomi Redmi Note 14 6/128GB Ocean Blue',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-6-128gb-ocean-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/12512562126.webp'],
+ 'name': 'Xiaomi 15 12/512GB Green',
+ 'price': '41999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-15-12-512gb-green.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_15_plus_blue_pdp_image_position-1__ww-en.jpg'],
+ 'name': 'Apple iPhone 15 128GB Blue (MTP43)',
+ 'price': '33999',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-15-128gb-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_desert_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro 128GB Desert Titanium (MYNF3)',
+ 'price': '51499',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-128gb-desert-titanium.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/4/645465.webp'],
+ 'name': 'Xiaomi Redmi 14C 8/256GB Starry Blue',
+ 'price': '5299',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-8-256gb-starry-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/0/6084301212_w600_h600_6084301212.webp'],
+ 'name': 'Moto G85 8/256 GB Cobalt Blue (PB2A0044RS)',
+ 'price': '10999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g85-8-256-gb-cobalt-blue-pb2a0044rs.html'}
+2025-05-11 21:09:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-3/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/7/2727272727271717150729.webp'],
+ 'name': 'Xiaomi Redmi 13 6/128GB Ocean Blue',
+ 'price': '5499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-13-6-128gb-ocean-blue.html'}
+2025-05-11 21:09:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://allo.ua/ua/products/mobile/> (referer: None)
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/126126612162.webp'],
+ 'name': 'Xiaomi 15 Ultra 16/1024GB Silver Chrome',
+ 'price': '63999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-15-ultra-16-1024gb-silver-chrome.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125125_11.webp'],
+ 'name': 'Xiaomi 15 12/512GB Black',
+ 'price': '41999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-15-12-512gb-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s938_galaxys25ultra_front_titaniumblack_241107_result_1.webp'],
+ 'name': 'Samsung Galaxy S25Ultra 12/512 Black(SM-S938BZKGEUC',
+ 'price': '61199',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s25-ultra-12-512gb-titanium-black-sm-s938bzkgeuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_desert_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 256GB Desert Titanium (MYWX3)',
+ 'price': '62799',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-256gb-desert-titanium.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s936_galaxys25plus_front_navy_241107_result_1.webp'],
+ 'name': 'Samsung Galaxy S25+ 12/512GB Navy (SM-S936BDBGEUC)',
+ 'price': '50399',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s25-12-512gb-navy-sm-s936bdbgeuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125_2_3.webp'],
+ 'name': 'Термінал Xiaomi Redmi Note 14 Pro 8/256 Midnight Black',
+ 'price': '10999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-8-256gb-midnight-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s931_galaxys25_front_navy_241108_result_1.webp'],
+ 'name': 'Samsung Galaxy S25 12/512GB Navy (SM-S931BDBHEUC)',
+ 'price': '43199',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s25-12-512gb-navy-sm-s931bdbheuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s721_galaxys24fe_graphite_front_result_2.webp'],
+ 'name': 'Samsung Galaxy S24FE 8/256 GRAPHITE(SM-S721BZKGEUC)',
+ 'price': '26099',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s24fe-8-256-graphite-sm-s721bzkgeuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/2/621126126_1.webp'],
+ 'name': 'Xiaomi 14T 12/256GB Titan Black',
+ 'price': '21999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-12-256gb-titan-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/_/o/_o7-black-front-r1-wallpaper_result.webp'],
+ 'name': 'Xiaomi Redmi Note 14 8/256GB Midnight Black',
+ 'price': '7499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-8-256gb-midnight-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_black_titanium_pdp_image_position_1__ce-ww_2.webp'],
+ 'name': 'Apple iPhone 16 Pro 256GB Black Titanium (MYNH3)',
+ 'price': '56699',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-256gb-black-titanium.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a366_galaxy_a36_5g_awesome_black_front_result_1.webp'],
+ 'name': 'Samsung Galaxy A36 5G 8/256 Awesome Black (SM-A366BZKGEUC)',
+ 'price': '16199',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a36-5g-8-256-awesome-black-sm-a366bzkgeuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/4/34534534_2.webp'],
+ 'name': 'Xiaomi Redmi Note 14S 8/256 Aurora Purple',
+ 'price': '9999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14s-8-256-aurora-purple.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/5/15125125_2.webp'],
+ 'name': 'POCO M7 Pro 5G 12/256GB Green',
+ 'price': '8999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-m7-pro-5g-12-256gb-green.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/4/247237_1.webp'],
+ 'name': 'POCO F7 Pro 12/256GB Black',
+ 'price': '24999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-f7-pro-12-256gb-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a165f_galaxy-a16_lte_black_front-large_result.webp'],
+ 'name': 'Samsung Galaxy A16 8/256 BLACK (SM-A165FZKCEUC)',
+ 'price': '7599',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a16-8-256-black-sm-a165fzkceuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/456456456_3.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro+ 5G 12/512GB Midnight Black',
+ 'price': '18999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-12-512gb-midnight-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a566_galaxy_a56_5g_awesome_graphite_front_result_2_1.webp'],
+ 'name': 'Samsung Galaxy A56 5G 8/256 Awesome Graphite (SM-A566BZKCEUC)',
+ 'price': '21399',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a56-5g-8-256-awesome-graphite-sm-a566bzkceuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a065f_galaxy_a06_blue_black_front_result_1.webp'],
+ 'name': 'Samsung Galaxy A06 4/128 BLACK (SM-A065FZKGSEK)',
+ 'price': '4099',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a06-4-128-black-sm-a065fzkgsek.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/126126126126_1.webp'],
+ 'name': 'POCO X7 Pro 12/512GB Black',
+ 'price': '18999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-x7-pro-12-512gb-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a266_galaxy_a26_5g_black_front_result_1.webp'],
+ 'name': 'Samsung Galaxy A26 5G 8/256 Black (SM-A266BZKCEUC)',
+ 'price': '13099',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a26-5g-8-256-black-sm-a266bzkceuc.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone-13-midnight-select-2021.534x728_m_5.webp'],
+ 'name': 'Apple iPhone 13 128GB Midnight (MLPF3)',
+ 'price': '22999',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-13-128gb-black.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125126125125.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro 8/256GB Ocean Blue',
+ 'price': '10999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-8-256gb-ocean-blue.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/0/2025_orion_basicpack_mountaintrail_pdp_hero_result.webp'],
+ 'name': 'Moto Razr 60 Ultra 16/512 Mountain Trail (PB8R0066RS)',
+ 'price': '54999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-razr-60-ultra-16-512-mountain-trail-pb8r0066rs.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/4/14141414141414_2_1.webp'],
+ 'name': 'Moto Edge 50 fusion 8/256 Forest Blue (PB3T0059UA)',
+ 'price': '12499',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-fusion-8-256-forest-blue-pb3t0059ua.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/1/1171711717.webp'],
+ 'name': 'Moto Edge 50 ultra 16/1T Forest Grey (PB0Y0032RS)',
+ 'price': '31999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-ultra-16-1t-forest-grey-pb0y0032rs.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/n/u/nubia_neo-2_-710_600_black.webp'],
+ 'name': 'Nubia NEO 2 5G 8/256GB Grey',
+ 'price': '6999',
+ 'url': 'https://allo.ua/ua/products/mobile/nubia-neo-2-5g-8-256gb-grey.html'}
+2025-05-11 21:09:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/0/60841-honor-200-lite-4.webp'],
+ 'name': 'HONOR 200 Lite 8/256 Midnight black',
+ 'price': '8999',
+ 'url': 'https://allo.ua/ua/products/mobile/honor-200-lite-8-256-midnight-black.html'}
+2025-05-11 21:09:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://allo.ua/ua/products/mobile/p-4/> (referer: None)
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_desert_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 512GB Desert Titanium (MYX23)',
+ 'price': '73099',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-512gb-desert-titanium.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a165f_galaxy-a16_lte_gray_front-large_result_1.webp'],
+ 'name': 'Samsung Galaxy A16 4/128 GRAY (SM-A165FZABEUC)',
+ 'price': '6599',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a16-4-128-gray-sm-a165fzabeuc.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/2/321_6_2.webp'],
+ 'name': 'Xiaomi Redmi 14C 4/128GB Sage Green',
+ 'price': '3999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-4-128gb-sage-green.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/4/347347347_1.webp'],
+ 'name': 'Moto G05 4/128 GB Denim Blue (PB6L0051UA)',
+ 'price': '3999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g05-4-128-gb-denim-blue-pb6l0051ua.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/124124124_5.webp'],
+ 'name': 'Xiaomi Redmi Note 14 Pro 5G 8/256GB Coral Green',
+ 'price': '13999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-coral-green.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/7/272727272727.webp'],
+ 'name': 'Xiaomi Redmi 13 8/256GB Ocean Blue',
+ 'price': '6499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-13-8-256gb-ocean-blue.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_natural_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro 128GB Natural Titanium (MYNG3)',
+ 'price': '51499',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-128gb-natural-titanium.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s921_galaxys24_front_onyxblack_231110_1.jpg'],
+ 'name': 'Samsung Galaxy S24 8/256Gb Black (SM-S921BZKGEUC)',
+ 'price': '32499',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s24-8-256gb-black-sm-s921bzkgeuc.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-a366_galaxy_a36_5g_awesome_black_front_result.webp'],
+ 'name': 'Samsung Galaxy A36 5G 6/128 Awesome Black (SM-A366BZKBEUC)',
+ 'price': '13999',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-a36-5g-6-128-awesome-black-sm-a366bzkbeuc.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/123123123_20.webp'],
+ 'name': 'Xiaomi 15 Ultra 16/512GB Black',
+ 'price': '56999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-15-ultra-16-512gb-black.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/9/9/9999_1678.webp'],
+ 'name': 'Moto G24 4/128 Matte Charcoal (PB180009RS)',
+ 'price': '3799',
+ 'url': 'https://allo.ua/ua/products/mobile/motorola-g24-4-128-matte-charcoal-pb180009rs.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/7/6786786781717150714.webp'],
+ 'name': 'Xiaomi Redmi 13 6/128GB Pearl Pink',
+ 'price': '5499',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-13-6-128gb-pearl-pink.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/1227127172.webp'],
+ 'name': 'Moto G04 4/64 GB Concord Black (PB150015UA)',
+ 'price': '3199',
+ 'url': 'https://allo.ua/ua/products/mobile/motorola-g04-4-64-gb-concord-black-pb150015ua.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125125_6_1.webp'],
+ 'name': 'POCO X7 Pro 8/256GB Yellow',
+ 'price': '15999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-x7-pro-8-256gb-yellow.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/123_22_2.webp'],
+ 'name': 'Xiaomi 14T Pro 12/512GB Titan Blue',
+ 'price': '29999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-pro-12-512gb-titan-blue.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/s/m/sm-s931_galaxys25_front_navy_241108_result.webp'],
+ 'name': 'Термінал Samsung Galaxy S25 12/256GB Navy (SM-S931BDBGEUC)',
+ 'price': '39599',
+ 'url': 'https://allo.ua/ua/products/mobile/samsung-galaxy-s25-12-256gb-navy-sm-s931bdbgeuc.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125125_6.webp'],
+ 'name': 'POCO X7 Pro 12/512GB Yellow',
+ 'price': '18999',
+ 'url': 'https://allo.ua/ua/products/mobile/poco-x7-pro-12-512gb-yellow.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/0/2024_taipei_basicpack_darkestspruce_pdp_result.webp'],
+ 'name': 'Moto G55 8/256 Forest Grey (PB5U0009RS)',
+ 'price': '8499',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g55-8-256-forest-grey-pb5u0009rs.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/6/2632632632361725521389.webp'],
+ 'name': 'Xiaomi 14T Pro 12/1T Titan Black',
+ 'price': '31999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-14t-pro-12-1t-titan-black.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/4/14141414141414_2.webp'],
+ 'name': 'Moto Edge 50 fusion 12/512 Forest Blue (PB3T0062UA)',
+ 'price': '13999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-fusion-12-512-nordic-wood-pb3t0062ua.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_black_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 512GB Black Titanium (MYX03)',
+ 'price': '73099',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-512gb-black-titanium.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/1/2/125125125_2_2_2.webp'],
+ 'name': 'Термінал Xiaomi Redmi Note 14 Pro+ 5G 8/256 Frost Blue',
+ 'price': '15999',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-note-14-pro-5g-8-256gb-frost-blue.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/2/0/2024_vienna_basicpack_poinciana_backside__result.webp'],
+ 'name': 'Moto Edge 50 NEO 8/256 Poinciana (PB310042RS)',
+ 'price': '12999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-edge-50-neo-8-256-poinciana-pb310042rs.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/4/5/456456456456_2.webp'],
+ 'name': 'Moto G75 8/256 GB Succulent Green (PB3Y0011RS)',
+ 'price': '9999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g75-8-256-gb-succulent-green-pb3y0011rs.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/3/2/321_6.webp'],
+ 'name': 'Xiaomi Redmi 14C 8/256GB Sage Green',
+ 'price': '5299',
+ 'url': 'https://allo.ua/ua/products/mobile/xiaomi-redmi-14c-8-256gb-sage-green.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/6/0/6084305709_w600_h600_6084305709.webp'],
+ 'name': 'Moto G85 8/256 GB Olive Green (PB2A0043RS)',
+ 'price': '10999',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g85-8-256-gb-olive-green-pb2a0043rs.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_16_pro_max_natural_titanium_pdp_image_position_1__ce-ww_1.webp'],
+ 'name': 'Apple iPhone 16 Pro Max 512GB Natural Titanium (MYX33)',
+ 'price': '73099',
+ 'url': 'https://allo.ua/ua/products/mobile/apple-iphone-16-pro-max-512gb-natural-titanium.html'}
+2025-05-11 21:09:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://allo.ua/ua/products/mobile/p-4/>
+{'image_urls': ['https://i.allo.ua/media/catalog/product/cache/3/small_image/212x184/9df78eab33525d08d6e5fb8d27136e95/5/7/576675675567567_1.jpg'],
+ 'name': 'Moto G54 Power 12/256 GB Midnight Blue (PB0W0006RS)',
+ 'price': '7499',
+ 'url': 'https://allo.ua/ua/products/mobile/moto-g54-12-256-gb-midnight-blue-pb0w0006rs.html'}
+2025-05-11 21:09:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-05-11 21:09:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1794,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 651573,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 7.806701,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 5, 11, 18, 9, 17, 350556, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 7528825,
+ 'httpcompression/response_count': 4,
+ 'item_scraped_count': 112,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 122,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 4,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 5, 11, 18, 9, 9, 543855, tzinfo=datetime.timezone.utc)}
+2025-05-11 21:09:17 [scrapy.core.engine] INFO: Spider closed (finished)
