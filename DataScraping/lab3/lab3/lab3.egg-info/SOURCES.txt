@@ -1,0 +1,8 @@
+deploy.py
+lab3.egg-info/PKG-INFO
+lab3.egg-info/SOURCES.txt
+lab3.egg-info/dependency_links.txt
+lab3.egg-info/entry_points.txt
+lab3.egg-info/top_level.txt
+spiders/__init__.py
+spiders/phones.py

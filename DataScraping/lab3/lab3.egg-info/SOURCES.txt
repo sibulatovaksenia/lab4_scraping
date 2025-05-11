@@ -1,0 +1,14 @@
+setup.py
+lab3/__init__.py
+lab3/deploy.py
+lab3/items.py
+lab3/middlewares.py
+lab3/pipelines.py
+lab3/settings.py
+lab3.egg-info/PKG-INFO
+lab3.egg-info/SOURCES.txt
+lab3.egg-info/dependency_links.txt
+lab3.egg-info/entry_points.txt
+lab3.egg-info/top_level.txt
+lab3/spiders/__init__.py
+lab3/spiders/phones.py
